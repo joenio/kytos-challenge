@@ -8,6 +8,10 @@ This the first step on selection process for Kytos project on UNESP.
 
 * Python3
 
+## Running
+
+   ./parser.py
+
 ## References for Kytos project
 
 * [Kytos documentation](http://docs.kytos.io)
