@@ -16,3 +16,11 @@ This the first step on selection process for Kytos project on UNESP.
 
 * [Kytos documentation](http://docs.kytos.io)
 * [Kytos on GitHub](http://github.com/kytos)
+
+## Author
+
+* Joenio Costa <joenio@joenio.me>
+
+## License
+
+GNU GPLv3
