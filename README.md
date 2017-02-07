@@ -10,7 +10,7 @@ This the first step on selection process for Kytos project on UNESP.
 
 ## Running
 
-   ./parser.py
+    ./parser.py
 
 ## References for Kytos project
 
