@@ -54,13 +54,19 @@ class OfpHeader(object):
     return int.from_bytes(value, byteorder='big', signed=False)
 
   def __str__(self):
-    return "OpenFlow protocol message:\n - version: {v}\n - type: {t} ({t_name})\n - length: {l}\n - xid: {x}".format(
-      v = self.to_int(header.version),
-      t = self.to_int(header.type),
-      t_name = OfpType(self.to_int(header.type)).name,
-      l = self.to_int(header.length),
-      x = self.to_int(header.xid)
-    )
+    return """
+      OpenFlow protocol message header:
+       - Version: {v}
+       - Type: {t} ({t_name})
+       - Length: {l}
+       - Transaction id: {x}
+      """.format(
+        v = self.to_int(header.version),
+        t = self.to_int(header.type),
+        t_name = OfpType(self.to_int(header.type)).name,
+        l = self.to_int(header.length),
+        x = self.to_int(header.xid)
+      )
 
 header = OfpHeader('ofpt_hello.dat')
 print(header)
